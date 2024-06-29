@@ -108,7 +108,7 @@ test["val"].plot(legend=True)
 predictions.plot(legend=True)
 plt.show()
 
-# Forecast future values using SARIMA model
+# Forecast future values using SARIMA model, Best forecast uses order (0, 0, 0) and seasonal_order (2, 1, 0, 12)
 model = SARIMAX(
     daily["val"],
     order=(0, 0, 0),

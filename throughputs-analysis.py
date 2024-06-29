@@ -89,7 +89,7 @@ stepwise_fit.summary()
 train = daily.iloc[:len(daily) - 12]
 test = daily.iloc[len(daily) - 12:]
 
-# Fit SARIMA model to training data (using manually chosen parameters)
+# Fit SARIMA model to training data (using manually chosen parameters), Best forecast uses order (1, 0, 1) and seasonal_order (0, 1, 1, 12)
 model = SARIMAX(
     train["val"],
     order=(1, 0, 1),
