@@ -8,7 +8,7 @@ with open('data/packets-retransmits_normalized.json', 'r') as file:
 packets_retransmits_values = np.array([int(entry["val"]) for entry in data])
 
 result = adfuller(packets_retransmits_values)
-print('Teste de Estatística ADF: %f' % result[0])
+print('Teste de Estatística ADF (Retransmissão de Pacotes): %f' % result[0])
 print('p-valor: %f' % result[1])
 print('Valores Críticos:')
 
