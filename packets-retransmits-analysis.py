@@ -85,8 +85,8 @@ stepwise_fit = auto_arima(
 stepwise_fit.summary()
 
 # Split data into training and testing sets
-train = daily.iloc[:len(daily) - 12]
-test = daily.iloc[len(daily) - 12:]
+train = daily.iloc[:len(daily) - 36]
+test = daily.iloc[len(daily) - 36:]
 
 # Fit SARIMA model to training data (using manually chosen parameters)
 model = SARIMAX(

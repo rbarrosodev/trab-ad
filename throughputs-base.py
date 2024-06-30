@@ -22,7 +22,7 @@ date_format = mdates.DateFormatter("%d/%m/%Y")
 plt.gca().xaxis.set_major_formatter(date_format)
 
 # Plot the data
-plt.ylabel("Dia do Ano", fontsize=16)
+plt.xlabel("Dia do Ano", fontsize=16)
 plt.ylabel("Gbits/s", fontsize=16)
 plt.title("Taxa de Transferência (POP SP para POP RS)", fontsize=18)
 plt.legend()
